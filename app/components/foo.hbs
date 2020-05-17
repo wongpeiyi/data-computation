@@ -1,0 +1,9 @@
+{{!-- This throws error --}}
+{{this.dataLength}}
+
+{{!-- This doesn't throw as it doesn't pass through component getter --}}
+{{@data.length}}
+
+<div>
+  <button {{on "click" (action "createPost")}}>Create and save a Post</button>
+</div>
